@@ -21,11 +21,11 @@ class Square extends React.Component {
     );
   }
 }
+ ```
 
-        ```
+
+
 ## // Board doesn't need constrtuctor as it gets states from its parent component
-
-
 
 
 ```
@@ -43,13 +43,9 @@ handleClick(i) {
   });
 }
                 
-  renderSquare(i) {
-    
-    return <this.state.Squares{i} =onClick={()=> this.props.onClick(i)/>;
-    
-  }
-  render() {
-    
+  renderSquare(i) { return <this.state.Squares{i} =onClick={()=> this.props.onClick(i)/>;}
+  
+  render() {  
   const winner = calculateWinner(this.state.squares);
   let status;
   if (winner) {
@@ -58,8 +54,7 @@ handleClick(i) {
     status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
   }
  
-        
-            
+         
     const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     return (
       <div>
@@ -86,6 +81,8 @@ handleClick(i) {
 ```
                
 ## //One important thing is to keep the states in parent class then pass down to its children class
+
+
 
 ```
 >class Game extends React.Component {
