@@ -7,7 +7,7 @@
 
 //When aggregating data from multiple children or to have two child components communicate with each other, move the state upwards parent component would be the wise choice.
 
-
+```
 class Square extends React.Component {    
 //render() is the basic method of component to output and update the component
   render() {
@@ -23,11 +23,11 @@ class Square extends React.Component {
 }
 
           
-      
+      ```
 // Board doesn't need constrtuctor as it gets states from its parent component
-
-class Board extends React.Component {
 ```
+class Board extends React.Component {
+
 handleClick(i) {
   const squares = this.state.squares.slice();// const ensures  squares[i] = 
     if (calculateWinner(squares) || squares[i]) {
@@ -39,8 +39,6 @@ handleClick(i) {
     xIsNext: !this.state.xIsNext,
   });
 }
-                
-                
                 
   renderSquare(i) {
     
