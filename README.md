@@ -25,8 +25,9 @@ class Square extends React.Component {
           
       
 // Board doesn't need constrtuctor as it gets states from its parent component
->class Board extends React.Component {
 
+class Board extends React.Component {
+```
 handleClick(i) {
   const squares = this.state.squares.slice();// const ensures  squares[i] = 
     if (calculateWinner(squares) || squares[i]) {
@@ -81,9 +82,11 @@ handleClick(i) {
     );
   }
 }
-               
+               ```
                
 //Keep the states in parent class then pass down to its children class
+
+```
 >class Game extends React.Component {
                    
   constructor() {
