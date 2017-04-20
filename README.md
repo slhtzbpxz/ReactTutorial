@@ -12,9 +12,13 @@ class Square extends React.Component {
 //render() is the basic method of component to output and update the component
   render() {
     return (
-        //Should use "className" instead of class as "class" is already reserved by JavaScript(Also use htmlFor instead of for)
-        // Arrow function used as a feature of ES6
+```
 
+        
+
+##//Should use "className" instead of class as "class" is already reserved by JavaScript(Also use htmlFor instead of for)
+##// Arrow function used as a feature of ES6
+```
       <button className="square" onClick={()=>this.props.onClick{()=>this.props.onClick()}>
         {this.props.value}
       </button>
@@ -43,12 +47,21 @@ handleClick(i) {
     xIsNext: !this.state.xIsNext,
   });
 }
-                
-  renderSquare(i) { return <this.state.Squares{i} =onClick={()=> this.props.onClick(i)/>;}
+```
+ ##// borad's onClick method inherits Game's onClick method as a property
+ 
+ 
+ > renderSquare(i) { return <this.state.Squares{i} =onClick={()=> this.props.onClick(i)/>;}
   
   render() {  
   const winner = calculateWinner(this.state.squares);
-  let status;
+  
+  ## // Using let instead of var to limit the scope of varibale, new function of ES6
+  
+  
+  ```
+  
+let status;
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
@@ -162,8 +175,6 @@ class Game extends React.Component {
     );
   }
 }
-
-
 ```
 
 ```
