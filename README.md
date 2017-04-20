@@ -1,11 +1,11 @@
 # ReactTutorial
 
 
-// In React Everything is a component. What I am doing is just building components that fit into other components
+## // In React Everything is a component. What I am doing is just building components that fit into other components
 
-//Each component is encapsulated and therfore independent.
+## //Each component is encapsulated and therfore independent.
 
-//When aggregating data from multiple children or to have two child components communicate with each other, move the state upwards parent component would be the wise choice.
+## //When aggregating data from multiple children or to have two child components communicate with each other, move the state upwards parent component would be the wise choice.
 
 ```
 class Square extends React.Component {    
@@ -22,9 +22,12 @@ class Square extends React.Component {
   }
 }
 
-          
-      ```
-// Board doesn't need constrtuctor as it gets states from its parent component
+        ```
+## // Board doesn't need constrtuctor as it gets states from its parent component
+
+
+
+
 ```
 class Board extends React.Component {
 
@@ -80,9 +83,9 @@ handleClick(i) {
     );
   }
 }
-               ```
+```
                
-//Keep the states in parent class then pass down to its children class
+## //One important thing is to keep the states in parent class then pass down to its children class
 
 ```
 >class Game extends React.Component {
@@ -214,3 +217,4 @@ function calculateWinner(squares) {
   return null;
 }
 
+```
