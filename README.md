@@ -7,6 +7,8 @@
 
 ## //When aggregating data from multiple children or to have two child components communicate with each other, move the state upwards parent component would be the wise choice.
 
+## //React uses JSX, which makes the tree sturcture easier to understand
+   //For JSX, stuff inside <> is html and stuff inside {} is JavaScript
 ```
 class Square extends React.Component {    
 //render() is the basic method of component to output and update the component
@@ -48,7 +50,7 @@ handleClick(i) {
   });
 }
 ```
- ##// borad's onClick method inherits Game's onClick method as a property
+ ## // borad's onClick method inherits Game's onClick method as a property
  
  
  > renderSquare(i) { return <this.state.Squares{i} =onClick={()=> this.props.onClick(i)/>;}
